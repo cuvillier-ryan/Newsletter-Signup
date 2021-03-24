@@ -18,8 +18,19 @@ app.post("/", function(req, res){
   var email = req.body.email;
 
   var data = {
-    
-  }
+    members: [
+      {
+        email_address: email,
+        status: "subscribed",
+        merge_fields: {
+          FNAME: firstName,
+          LNAME: lastName
+        }
+      }
+    ]
+  };
+
+  var jsonData = JSON.stringify(data);
 
 });
 

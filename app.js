@@ -17,10 +17,20 @@ app.post("/", function(req, res){
   var lastName = req.body.lName;
   var email = req.body.email;
 
-  console.log(firstName, lastName, email);
+  var data = {
+    
+  }
 
 });
 
 app.listen(3000, function() {
   console.log("server is running on port 3000");
 });
+
+
+//API KEY
+// 424205e97acb09f04facacf6cd8b0d21-us1
+
+
+//List Id
+// 6b2cb14e02
